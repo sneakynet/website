@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         .bordered {
+             border: 1px solid black;
+             border-radius: 4px;
+             padding: 1em;
+         }
+
+         .page {
+             width: 100%;
+             height: 100%;
+             columns: 3;
+             column-rule: 4px dotted rgb(79 185 227);
+             column-fill: balance;
+             break-after: page;
+             overflow: hidden;
+         }
+
+         .section {
+             break-inside: avoid;
+             break-after: always;
+             width: 85%;
+             margin-left: auto;
+             margin-right: auto;
+         }
+
+         .flex-container {
+             display: flex;
+         }
+
+         .flex-spread {
+             align-items: center;
+             justify-content: space-around;
+         }
+
+         .flex-column {
+             flex-direction: column;
+         }
+
+         .flex-max {
+             flex-grow: 1;
+         }
+
+         .top-margin {
+             padding-top: 5vh;
+         }
+
+         .write-in-line {
+             line-height: 1.5;
+             border-bottom: 1px solid black;
+             width: 85%;
+         }
+
+         .directory {
+             font-size: x-small;
+         }
+
+         ul.leaders {
+             max-width: 40em;
+             padding: 0;
+             overflow-x: hidden;
+             list-style: none
+         }
+
+         ul.leaders li:before {
+             float: left;
+             width: 0;
+             white-space: nowrap;
+             content:
+                 "...................."
+                 "...................."
+                 "...................."
+                 "...................."
+                 "...................."
+                 "...................."
+         }
+
+         ul.leaders span:first-child {
+             padding-right: 0.33em;
+             background: white
+         }
+
+         ul.leaders span + span {
+             float: right;
+             padding-left: 0.33em;
+             background: white
+         }
+
+         @media (prefers-color-scheme: dark) {
+             body {
+                 background: #444;
+                 color: #ddd;
+             }
+             a {
+                 color: #ddd;
+             }
+             ul.leaders span:first-child {
+                 background: #444;
+             }
+             ul.leaders span + span {
+                 background: #444;
+             }
+         }
+
+         @media print {
+             body {
+                 font-size: small;
+             }
+
+             .noprint {
+                 display: none;
+             }
+
+             .page {
+                 height: 100vh;
+                 width: 100vw;
+                 column-rule: none;
+             }
+
+             .max-height {
+                 height: 100vh;
+             }
+         }
+
+         @page {
+             size: 11in 8.5in;
+         }
+        </style>
+
+        <title>SneakyNet Network Services</title>
+    </head>
+    <body>
+        <div class="page">
+            <div class="section top-margin">
+                <h2>Getting Set Up</h2>
+                <p>Welcome to the Global Village, where you can contact people and places far away using the power contained in your humble telephone.  We're excited to provide you this service, and are excited to provide you our zero-wait customer-driven setup experience.</p>
+                <p>To begin, locate the Shady Rate Interface (SRI) that has been provisioned to your premises.  The Shady Rate Interface is gray, bears the SneakyNet logo, and looks like this:</p>
+
+                <center><img class="bordered" width="40%" src="SRI.png" /></center>
+
+                <p>Connect your devices using standard telephone cables to the numbered ports on your SRI.  Using our proprietary MultiJack technology, you can use either a standard 6p4c telephone cable, or an 8p8c cable for high symbol-rate applications.  If you do not have a cable, SneakyNet can add one to your account.</p>
+
+                <p>Your numbers are as follows:</p>
+                <ol>
+                    <li class="write-in-line"></li>
+                    <li class="write-in-line"></li>
+                    <li class="write-in-line"></li>
+                    <li class="write-in-line"></li>
+                </ol>
+
+            </div>
+            <div class="section top-margin">
+                <h2>About SneakyNet</h2>
+                <p>SneakyNet is your value voice provider!  Learn more about us at <br /><br /> https://sneaky.nonroutable.network/</p>
+
+                <h3>Who is SneakyNet?</h3>
+                <p>SneakyNet is a Local Exchange Company specializing in Vintage Computer Festivals, providing services that are period correct for a late 1990s context.</p>
+
+                <h3>Does SneakyNet Use VOIP?</h3>
+                <p>No!  Our entire network uses Time Division Multiplexing (TDM) to provide guaranteed latency and throughput.  Each customer circuit is a fully dedicated 64kbit/s channel.</p>
+
+                <h3>How is my Data Processed?</h3>
+                <p>Your data is processed in a manner which enables maximum revenue for the phone company.</p>
+
+                <h3>Is My Telephone Private?</h3>
+                <p>To ensure your privacy, we do not monitor lines for content, availability, or even usefulness.  The SneakyNet Security Team recommends checking for people standing behind you before discussing sensitive information.</p>
+            </div>
+            <div class="section flex-container flex-column flex-spread max-height">
+                <center>
+                    <img width="90%" src="VCFSW.png" />
+                    <h1>Customer<br /> Welcome Guide</h1>
+                </center>
+                <center>
+                    <img width="90%" src="SneakyNetLogo.png" />
+                </center>
+                <center>
+                    <p>Welcome valued customer!  This guide will tell you about services and features on your SneakyNet telephone line.</p>
+                </center>
+            </div>
+        </div>
+        <hr class="noprint" />
+        <div class="page">
+            <div class="section top-margin">
+                <h2>Available Services</h2>
+                <p>SneakyNet offers a number of value-added services that you can use with your telephone line.  For a complete listing and sales advising, call our sales team.</p>
+
+                <h3>Dialup Network</h3>
+                <p>You can access the information super highway using your telephone line.  All you need is a modem to get started.  You may request a dialup account from our Network Operations Center.</p>
+
+                <h3>Terminal Services</h3>
+                <p>You can dial in to our Terminal Services cluster to access text services, or to make an outbound conection to a computer service from one of our many partner organizations.</p>
+
+                <h3>ASDL</h3>
+                <p>Need higher speed data?  Subscribe to ADSL service today for blistering fast speeds on our GigaUltraMax plan.</p>
+
+                <h3>Ethernet</h3>
+                <p>High speed data is available directly from our switched Ethernet data fabric.  You can obtain Ethernet services independently, bundled with your telephone service, or as a unique account.</p>
+            </div>
+            <div class="section top-margin">
+                <h2>Directory</h2>
+                <p>SneakyNet is proud to provide all-distance direct dialing to our entire coverage area.  You may key any of the numbers below directly to reach a desired party.</p>
+
+                <h3>White Pages</h3>
+                <ul class="directory leaders">
+                    <li>
+                        <span>9900: Ti's "First Family"</span>
+                        <span>7005</span>
+                    </li>
+                    <li>
+                        <span>Anachronistic Things</span>
+                        <span>7013</span>
+                    </li>
+                    <li>
+                        <span>Forgotten Machines 1</span>
+                        <span>7000</span>
+                    </li>
+                    <li>
+                        <span>Forgotten Machines 2</span>
+                        <span>7001</span>
+                    </li>
+                    <li>
+                        <span>Fruitchannel 1</span>
+                        <span>7003</span>
+                    </li>
+                    <li>
+                        <span>Fruitchannel 2</span>
+                        <span>7004</span>
+                    </li>
+                    <li>
+                        <span>IBM RT PC</span>
+                        <span>7021</span>
+                    </li>
+                    <li>
+                        <span>NeXT Computers 1</span>
+                        <span>7016</span>
+                    </li>
+                    <li>
+                        <span>NeXT Computers 2</span>
+                        <span>7015</span>
+                    </li>
+                    <li>
+                        <span>Old World Computing 1</span>
+                        <span>7009</span>
+                    </li>
+                    <li>
+                        <span>Old World Computing 2</span>
+                        <span>8232</span>
+                    </li>
+                    <li>
+                        <span>Petar 1</span>
+                        <span>7010</span>
+                    </li>
+                    <li>
+                        <span>Petar 2</span>
+                        <span>7011</span>
+                    </li>
+                    <li>
+                        <span>Team Mesalanius</span>
+                        <span>7014</span>
+                    </li>
+                    <li>
+                        <span>The Clevengers 1</span>
+                        <span>7018</span>
+                    </li>
+                    <li>
+                        <span>The Clevengers 2</span>
+                        <span>7019</span>
+                    </li>
+                    <li>
+                        <span>The Forgotten IT Closet</span>
+                        <span>7002</span>
+                    </li>
+                    <li>
+                        <span>The Kitchen Sink</span>
+                        <span>7020</span>
+                    </li>
+                    <li>
+                        <span>Nybbles and Bytes</span>
+                        <span>7023</span>
+                    </li>
+                    <li>
+                        <span>William Tooker</span>
+                        <span>7024</span>
+                    </li>
+                    <li>
+                        <span>Alex Anderson-McLeod</span>
+                        <span>7025</span>
+                    </li>
+                    <li>
+                        <span>nowt for owt</span>
+                        <span>7012</span>
+                    </li>
+                    <li>
+                        <span>techav 1</span>
+                        <span>7007</span>
+                    </li>
+                    <li>
+                        <span>techav 2</span>
+                        <span>7006</span>
+                    </li>
+                    <li>
+                        <span>Yotsubanome Network</span>
+                        <span>7026</span>
+                    </li>
+                    <li>
+                        <span>Phone Zoo L1</span>
+                        <span>7030</span>
+                    </li>
+                    <li>
+                        <span>Phone Zoo L2</span>
+                        <span>7031</span>
+                    </li>
+                    <li>
+                        <span>Phone Zoo L3</span>
+                        <span>7032</span>
+                    </li>
+                    <li>
+                        <span>Phone Zoo L4</span>
+                        <span>7033</span>
+                    </li>
+                </ul>
+
+                <h3>Yellow Pages</h3>
+                <ul class="directory leaders">
+                    <li>
+                        <span>Rick Astley Hotline</span>
+                        <span>7998</span>
+                    </li>
+                    <li>
+                        <span>COLDLINE</span>
+                        <span>3100</span>
+                    </li>
+                    <li>
+                        <span>Dialup Network</span>
+                        <span>7990</span>
+                    </li>
+                    <li>
+                        <span>Terminal Services</span>
+                        <span>7991</span>
+                    </li>
+                    <li>
+                        <span>Cat Facts!</span>
+                        <span>7997</span>
+                    </li>
+                    <li>
+                        <span>Awoo</span>
+                        <span>56709</span>
+                    </li>
+                </ul>
+
+                <h3>System Numbers</h3>
+                <ul class="directory leaders">
+                    <li>
+                        <span>Utility Locate</span>
+                        <span>811</span>
+                    </li>
+                    <li>
+                        <span>Telephone Repair</span>
+                        <span>611</span>
+                    </li>
+                    <li>
+                        <span>Network Operations</span>
+                        <span>8221</span>
+                    </li>
+                    <li>
+                        <span>ANAC</span>
+                        <span>7999</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="section top-margin">
+                <h2>Long Distance Dialing</h2>
+                <p>Your SneakNet service provides direct dialing capabilities.  Here are some numbers from Bottom Barrel Bell (BBB), VCFSE service area you can dial today!</p>
+
+                <ul class="directory leaders">
+                    <li>
+                        <span>Bates Hotel</span>
+                        <span>1000</span>
+                    </li>
+                    <li>
+                        <span>Western Cordboard</span>
+                        <span>1010</span>
+                    </li>
+                    <li>
+                        <span>BBB Windows 98 Experience</span>
+                        <span>1020</span>
+                    </li>
+                    <li>
+                        <span>BBB Fax Machine</span>
+                        <span>1021</span>
+                    </li>
+                    <li>
+                        <span>BBB Windows 2K</span>
+                        <span>1022</span>
+                    </li>
+                    <li>
+                        <span>MacEffects</span>
+                        <span>1023</span>
+                    </li>
+                    <li>
+                        <span>Midrange Madness</span>
+                        <span>1024</span>
+                    </li>
+                    <li>
+                        <span>Apple II's</span>
+                        <span>1025</span>
+                    </li>
+                    <li>
+                        <span>WREK Live Feed</span>
+                        <span>1035</span>
+                    </li>
+                    <li>
+                        <span>Bottom Barrel Bell (Line 1)</span>
+                        <span>1150</span>
+                    </li>
+                    <li>
+                        <span>Bottom Barrel Bell (Line 2)</span>
+                        <span>1151</span>
+                    </li>
+                    <li>
+                        <span>Bottom Barrel Bell x.25 & Dialup</span>
+                        <span>1200</span>
+                    </li>
+                </ul>
+
+                <h2>Useful Information</h2>
+                <p>This guide provides you with a lot of valuable information, and should be retained for your records, but this isn't all the information we have!</p>
+                <p>Feel free to stop by the SneakyNet Central Office to learn more about our services, view a selection of premium telephones, and receive more information about advanced telephone services.</p>
+
+                <hr />
+                <p>When disconnecting your service, do <strong>NOT</strong> disconnect your SRI.  A telephone company representative will collect your SRI when deprovisioning the premises.</p>
+            </div>
+        </div>
+    </body>
+</html>
